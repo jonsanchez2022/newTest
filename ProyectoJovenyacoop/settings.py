@@ -87,9 +87,7 @@ WSGI_APPLICATION = 'ProyectoJovenyacoop.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default='postgres://postgres:postgres@localhost/postgres'
-    ) 
+    'default': dj_database_url.config() 
     }
 
 # Password validation
