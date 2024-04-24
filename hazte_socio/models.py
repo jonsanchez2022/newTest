@@ -1,5 +1,4 @@
 from pickle import TRUE
-from tkinter import Widget
 from django.db import models
 from django.forms import CharField
 from datetime import date
