@@ -1,0 +1,22 @@
+{% extends "ProyectoWebCoop/base.html" %}
+
+  {% load static %}
+
+    {% block content %}
+
+    {% load crispy_forms_tags%}
+<title >Contacto</title>
+<div class = "contenedorFormulario">
+
+
+      
+      <form action="" method="POST" style="text-align: center;">
+        {% csrf_token %}   
+        <table style="color:white; margin: 20px auto">{{miFormulario.as_table }}</table>
+        <input type="submit" value="Enviar">
+     </form>
+   
+   
+</div>
+
+    {% endblock %}

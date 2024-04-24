@@ -1,0 +1,42 @@
+{% extends "ProyectoWebCoop/base.html" %}
+
+  {% load static %}
+
+    {% block content %}
+  <!-- Heading -->
+  <title>Inicio</title>
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{%static 'ProyectoWebCoop/img/jovenyacoop00.jpeg' %}" alt="" style="width: 200%">
+        
+      </div>
+    </div>
+  </section>
+
+
+  
+    <!-- Message -->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Cooperativa Agropecuaria y Servicios Múltiples Jóvenes Emprendedores de Yamasá.</span>
+                <span class="section-heading-lower">JOVENYACOOP</span>
+              </h2>
+              <p class="mb-0">Cómo su nombre lo dice es una cooperativa Agropecuaria, 
+                por lo que aparte que los préstamos serían para usos agropecuarios también eso la limita a 
+                ser regional.  Los socios por medios de los ahorros se pueden prestar a un bajo interés, 
+                que aún no ha sido definido pero de seguro cómodo para los clientes además que va a poder 
+                recibir préstamos de instituciones como el FEDA.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    {% endblock %}

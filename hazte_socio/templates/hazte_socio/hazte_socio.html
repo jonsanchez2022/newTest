@@ -1,0 +1,75 @@
+{% extends "ProyectoWebCoop/base.html" %}
+
+  {% load static %}
+
+    {% block content %}
+    {% load crispy_forms_tags%}
+    <title >Hazte Socio</title>  
+<br>
+<br>
+<h2 class = "text-center text-white"> <b> Bienvenido al Formulario de Solicitud de Nuevos Socios </b> </h2>
+
+
+
+<section class="page-section cta">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="cta-inner rounded">
+          <h2 class="section-heading mb-4">
+            <span class="text-center section-heading-lower">Requisitos</span>
+            <span class="text-center section-heading-upper">Las personas que deseen ser socios de nuestra cooperativa deben cumplir con los siguientes requisitos</span>
+          </h2>
+          <ul>
+            <li>
+              Estar en pleno ejercicios de sus derechos civiles y ciudadanos
+            </li>
+            <li>
+              Presentar una solicitud de ingreso al Consejo de Administración y ser admitido por este, 
+              o por recomendación de un socios.
+            </li>
+            <li>
+              Ser legalmente capaz.
+            </li>
+            <li>
+              Pagar una cuota de inscripción de <b> Quinientos Pesos Dominicanos con 00/100 (RD$500.00) </b>los cuáles no serán reembolsables.
+            </li>
+            <li>
+              Ahorrar como mínimo la suma de <b> Quinientos Pesos Dominicanos con 00/100 (RD$500.00) </b> mensualmente
+            </li>
+            <li>
+              Aportar <b>un (1) certificado </b>por valor de <b> Quinientos Pesos Dominicanos con 00/100 (RD$500.00) </b>
+            </li>
+            <li>
+              Participar en los cursos básicos de cooperativismo, convocado por el Consejo de Administración, del cual,
+              deberá presentar la constancia o certificación de lugar.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class = "contenedorFormulario">
+  <h2 style="color: white; text-align: center"> <b> Formulario De Solicitud </b></h2>
+  <hr>
+  <form action="" class="FormularioSocio" method="POST" style="text-align: center;">
+
+      {% csrf_token %}
+      
+        <table style="color: white; margin: 20px auto;">{{form.as_table}} <table>
+
+     
+  <br>
+  <br>
+    <button type="submit" id="btnEnviar" class="button" style="width: 150px;">Enviar Solicitud</button>
+  <br>
+  <br>
+  </form>
+  
+</div>
+
+
+    {% endblock %}

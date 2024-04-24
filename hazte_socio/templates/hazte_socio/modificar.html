@@ -1,0 +1,27 @@
+{% extends "ProyectoWebCoop/base.html" %}
+
+  {% load static %}
+
+    {% block content %}
+    <title>Modificar Socio</title>
+<div class = "contenedorFormulario">
+    <h2 style="color: white; text-align: center"> <b> Modificar Socio </b></h2>
+    <hr>
+    <form action="" class="FormularioSocioAdmin" method="POST" style="text-align: center;">
+  
+        {% csrf_token %}
+        
+          <table style="color: white; margin: 20px auto;">{{form.as_table}} <table>
+  
+       
+    <br>
+    <br>
+      <button type="submit" id="btnEditar" class="button" style="width: 150px;">Modificar</button>
+    <br>
+    <br>
+    </form>
+    
+  </div>
+  
+  
+      {% endblock %}
