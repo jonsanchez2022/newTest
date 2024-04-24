@@ -88,7 +88,7 @@ WSGI_APPLICATION = 'ProyectoJovenyacoop.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgress://postgress:postgres@localhost/postgress'
+        default='postgres://postgres:postgres@localhost/postgres'
     ) 
     }
 
@@ -138,7 +138,7 @@ if not DEBUG:
     # Enable the WhiteNoise storage backend, which compresses static files to reduce disk use
     # and renames the files with unique names for each version to support long-term caching
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-    
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
