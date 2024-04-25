@@ -31,7 +31,7 @@
 
                     {% csrf_token %}
 
-                    {{form}}
+                    {{form.as_table}}
                         <br>
                     
                     <a href="{% url 'Home' %}" class="btn btn-primary"> Volver a Inicio</a> | 
